@@ -1,0 +1,220 @@
+\documentclass[11pt]{article}
+\setlength {\textwidth}{180mm} 
+\setlength {\textheight}{260mm}
+\topmargin=-35.00mm
+\oddsidemargin=-10.00mm
+\pagestyle{empty}
+
+\input{format}
+
+\begin{document}
+
+\title{A Guide to Emission and Absorption Lines and ``What they mean''.}
+\author{Nicholas P. Ross}
+\date{\today}
+\maketitle
+
+
+\begin{abstract}
+This is a simple document which will hopefully\/eventually be a pretty complete
+list of various emission lines and `what they mean'. That is to say, when a 
+paper reports a flux of a certain line, why is that line special? Is it because
+that line indicates current star formation, past star formation or maybe
+AGN activity. We shall hopefully discuss a few line ratios and spectral
+diagnostic plots. 
+\end{abstract}
+
+%Section heading
+\section{The Lines}
+
+\noindent
+N.B. 13.6 eV $\equiv$
+
+\begin{landscape}
+\begin{table}
+  \caption{The Lines}
+  \label{tab:the_lines}
+  \begin{center}
+    \begin{tabular}{lrllll} 
+      \hline
+      \hline
+      Name & Wavelength / \AA & Transition & Rest Passband & 
+      Interpreation & Reference \\
+      \hline
+      Lyman-$\alpha$ & 1215.67 & 2 to 1        & $\sim$FUV & Major QSO line       & 1 \\
+      Lyman-$\beta$  & 1025.18 & 3 to 1        & $\sim$FUV &        & 1 \\
+      Lyman-$\gamma$ &  972.02 & 4 to 1        & $\sim$FUV &        & 1 \\
+      Lyman Limit    &  911.27 & $\infty$ to 1 & $\sim$FUV &        & 1 \\
+      \hline
+      H-$\alpha$     & 6563.   & 3 to 2        & R,r       & Recent major SF or AGN activity & 2 \\
+      H-$\beta$      & 4861.   & 4 to 2        & B,V,g     &  & 2 \\
+      H-$\gamma$     & 4341.   & 5 to 2        & U,B,u     &  & 2 \\
+      H-$\delta$     & 4102.   & 6 to 2        & $\sim$FUV & Previous SF history  & 3 \\
+      Balmer Limit   & 3646.   & $\infty$ to 2 & $\sim$FUV &  & 2 \\
+      \hline
+      HI              & 3646.   & $\infty$ to 2 & $\sim$FUV &  & 2 \\
+      HII             & 3646.   & $\infty$ to 2 & $\sim$FUV &  & 2 \\
+      \hline
+      HeI              & 3646.   & $\infty$ to 2 & $\sim$FUV &  & 2 \\
+      HeII             & 3646.   & $\infty$ to 2 & $\sim$FUV &  & 2 \\
+      HeIII            & 3646.   & $\infty$ to 2 & $\sim$FUV &  & 2 \\
+      \hline
+      CIV              & 3646.   & $\infty$ to 2 & $\sim$FUV & Major QSO line & 2 \\
+      \hline
+      OII              & 3646.   & $\infty$ to 2 & $\sim$FUV & Major QSO line & 2 \\
+      \hline
+      OIII             & 3646.   & $\infty$ to 2 & $\sim$FUV & Recent major SF line & 2 \\ 
+      OIII             & 5007.   & $\infty$ to 2 & $\sim$FUV & Recent major SF line & 2 \\
+      \hline
+      Ca II H          & 3999.   & $\infty$ to 2 & $\sim$FUV & Old stellar pop & 3 \\
+      Ca II K          & 4001.   & $\infty$ to 2 & $\sim$FUV & Old stellar pop & 3 \\
+      \hline
+      NII              & 5007.   & $\infty$ to 2 & $\sim$FUV &  & 2 \\
+      \hline
+      NeV              & 3646.   & $\infty$ to 2 & $\sim$FUV & Major QSO line & 2 \\
+      \hline
+      $[$OIII $\lambda$ 5007/ H$\beta]$ &   &  &   & ``BPT'' diagram reliable tool for determining source & 2, 4, 5 \\
+      $[$NII $\lambda$ 6583/ H$\alpha]$ & & & & of line emission from a galaxy visually differentiate & 2,4,5 \\
+                                      & & & & between Seyferts, LINERs and SF gals. However, only at & \\
+                                      & & & & ``low'' redshifts since need H$\alpha$, (not at $z\sim1$). & \\
+                                      & & & &  Modified BPT with $(U-B)$ colour replacing & \\
+                                      & & & & $[$NII $\lambda$ 6583/ H$\alpha]$ e.g. Montero-Dorta, 0801.2769. & \\
+      \hline
+      [SII $\lambda$ 6583/ H$\alpha$]   &    & $\infty$ to 2 & $\sim$FUV & Major QSO line & 2,4. 5  \\
+      \hline
+      [$\alpha$/Fe]             & 3646.   & $\infty$ to 2 & $\sim$FUV & Major QSO line & 2 \\
+      \hline
+      NV               & 1???.67 & 2 to 1        & $\sim$FUV & Major QSO line       & 1 \\
+      SiIV             & 1???.67 & 2 to 1        & $\sim$FUV & Major QSO line       & 1 \\
+      CIV              & 1???.67 & 2 to 1        & $\sim$FUV & Major QSO line       & 1 \\
+      CIII]            & 1???.67 & 2 to 1        & $\sim$FUV & Major QSO line       & 1 \\
+      MgII             & 1???.67 & 2 to 1        & $\sim$FUV & Major QSO line       & 1 \\
+      \hline
+      \hline
+% GALEX FUV: 1350-1750, % GALEX NUV: 1750-2800
+%Lyman alpha forest is the sum of absorption lines arising from the Lyman alpha transition of the neutral hydrogen in the spectra of distant galaxies and quasars.
+    \end{tabular}
+  \end{center}
+\end{table}
+\end{landscape}
+
+
+\begin{table}
+  \caption{The Lines, in increasing Wavelength (Basis for this table from 
+  SDSS SkyServer Schema Browser, SpecLineNames view {\tt http://casjobs.sdss.org/dr6/en/help/browser/browser.asp}) }
+  \label{tab:the_lines}
+  \begin{center}
+    \begin{tabular}{lll} 
+      \hline
+      \hline
+name &	value &	description \\
+      \hline
+UNKNOWN	   &    0    & 	0.00 \\
+OVI\_1033   &	1033 &	1033.82 \\
+Lya\_1215   &	1215 &	1215.67 \\
+NV\_1241    &   1241 &	1240.81 \\
+OI\_1306    &   1306 &	1305.53 \\
+CII\_1335   &	1335 &	1335.31 \\
+SiIV\_1398  &	1398 &	1397.61 \\
+SiIV\_OIV\_1400 & 1400 &  1399.80 \\
+CIV\_1549   &   1549 &	1549.48 \\
+HeII\_1640  &	1640 &	1640.40 \\
+OIII\_1666  &	1666 &	1665.85 \\
+AlIII\_1857 &	1857 &	1857.40 \\
+CIII\_1909  &	1909 &	1908.73 \\
+CII\_2326   &	2326 &	2326.00 \\
+NeIV\_2439  &	2439 &	2439.50 \\
+MgII\_2799  &	2799 &	2799.12 \\
+NeV\_3347   &	3347 &	3346.79 \\
+NeV\_3427   &	3427 &	3426.85 \\
+OII\_3727   &	3727 &  3727.09 \\
+OII\_3730   &	3730 &	3729.88 \\
+Hh\_3799    &   3799 &  3798.98 \\
+Oy\_3836    &   3836 &	3836.47 \\
+HeI\_3889   &	3889 &	3889.00 \\
+CaII K\_3935 &  3935 &	3934.78 \\
+CAII H\_3970 &  3970 &	3969.59 \\
+He\_3971    &   3971 &	3971.19 \\
+SII\_4072   &	4072 &	4072.30 \\
+Hd\_4103    &   4103 &	4102.89 \\
+G\_4306	    &   4306 &	4305.61 \\
+Hg\_4342    &   4342 &	4341.68 \\
+OIII\_4364  &	4364 &	4364.44 \\
+Hb\_4863    &   4863 &  4862.68 \\
+OIII\_4933  &	4933 &	4932.60 \\
+OIII\_4960  &	4960 &  4960.30 \\
+OIII\_5008  &	5008 &  5008.24 \\
+
+     \hline
+      \hline
+ \end{tabular}
+   \end{center}
+\end{table}
+
+
+\begin{table}
+  \caption{The Lines, in increasing Wavelength (Basis for this table from 
+  SDSS SkyServer Schema Browser, SpecLineNames view {\tt http://casjobs.sdss.org/dr6/en/help/browser/browser.asp}) 
+  Cont.}
+  \label{tab:the_lines2b}
+  \begin{center}
+    \begin{tabular}{lll} 
+      \hline
+      \hline
+name &	value &	description \\
+      \hline
+Mg\_5177    &   5177 &	5176.70 \\
+Na\_5896    &   5896 &	5895.60 \\
+OI\_6302    &   6302 &	6302.05 \\
+OI\_6366    &   6366 &	6365.54 \\
+NI\_6529    &   6529 &	6529.03 \\
+NII\_6550   &	6550 &	6549.86 \\
+Ha\_6565    &   6565 &	6564.61 \\
+NII\_6585   &	6585 &	6585.27 \\
+Li\_6708    &   6708 &	6707.89 \\
+SII\_6718   &	6718 &	6718.29 \\
+SII\_6733   &	6733 &	6732.67 \\
+CaII\_8500  &   8500 &	8500.36 \\
+CaII\_8544  &	8544 &	8544.44 \\
+CaII\_8665  &	8665 &	8664.52 \\
+      \hline
+      \hline
+ \end{tabular}
+   \end{center}
+\end{table}
+
+
+
+
+\noindent
+E$+$A (e$+$a) galaxies have... (Roseboom et al. 2006 and refs therein).\\
+k$+$a         galaxies have... (Roseboom et al. 2006 and refs therein).\\
+
+
+
+\section{References}
+
+\begin{table}
+  \caption{The Refs}
+  \label{tab:the_ref}
+  \begin{center}
+    \begin{tabular}{llllll}
+      \hline
+      \hline 
+      Name                            & Year & Journal & Volume & Page & Section(s) \\
+      \hline
+      Croom et al.                    & 2004 & MNRAS      & 375        & 600  & ???? \\
+      Kriek et al.                    & 2007 & astro-ph   & 0611724    & v4   & 3 \\
+      Roseboom et al.                 & 2006 & MNRAS      &            &      &   \\
+      Baldwin, Phillips \& Terlevich  & 1981& MNRAS      &            &      &   \\
+      Yan et al.                      & 2006&            &            &      & \\
+      %also K. Brand talk,. Galaxy and BH evolution: Towards a unified view conf
+      \hline
+      \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+
+
+\end{document}
+

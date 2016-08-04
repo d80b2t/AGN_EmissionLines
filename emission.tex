@@ -1,0 +1,379 @@
+\documentclass[11pt]{article}
+\setlength {\textwidth}{180mm} 
+\setlength {\textheight}{260mm}
+\topmargin=-35.00mm
+\oddsidemargin=-10.00mm
+\pagestyle{empty}
+
+\input{format}
+
+\begin{document}
+
+\title{A Guide to Emission and Absorption Lines and ``What they mean''.}
+\author{Nicholas P. Ross}
+\date{\today}
+\maketitle
+
+
+\begin{abstract}
+This is a simple document which will hopefully/eventually be a pretty complete
+list of various emission lines and `what they mean'. That is to say, when a 
+paper reports a flux of a certain line, why is that line special? Is it because
+that line indicates current star formation, past star formation or maybe
+AGN activity. We shall hopefully discuss a few line ratios and spectral
+diagnostic plots. 
+\end{abstract}
+
+
+%Section heading
+\section{The Lines}
+\citet{Croom04}
+\noindent
+N.B. 13.6 eV $\equiv$
+
+
+\section{Forbidden vs. Permitted}
+
+Forbidden lines are spectral lines which are very improbable (not really forbidden). Their emission indicates very low densities in order for the electrons to survive in higher orbits without collisions long enough to emit rare wavelengths.
+
+Great resource: \href{http://www.astr.ua.edu/keel/galaxies/emission.html}{Interpreting Emission-Line Spectra} and \href{http://www.astr.ua.edu/keel/galaxies/sfr.html}{Star Formation in Galaxies}. 
+
+Straight from Wikipedia: \href{http://en.wikipedia.org/wiki/Forbidden_mechanism}{Forbidden mechanism}.
+%(``last modified on 5 April 2014 at 13:51''). 
+In physics, a forbidden mechanism or forbidden line is a spectral line
+emitted by atoms undergoing nominally ``forbidden'' energy transitions
+not normally allowed by the selection rules of quantum mechanics. In
+formal physics, this means that the process cannot proceed via the
+most efficient (electric dipole) route. Although the transitions are
+nominally "forbidden", there is a small probability of their
+spontaneous occurrence, should an atom or molecule be raised to an
+excited state. %More precisely, there is a certain probability that such an excited atom will make a forbidden transition to a lower energy state per unit time; by definition this probability is much lower than that for any transition permitted by the selection rules. Therefore, if a state can de-excite via a permitted transition (or otherwise, e.g. via collisions) it will almost certainly do so rather than choosing the forbidden route. Nevertheless, "forbidden" transitions are only relatively unlikely: states that can only decay in this way (so-called meta-stable states) usually have lifetimes of order milliseconds to seconds, compared to less than a microsecond for decay via permitted transitions.
+
+Forbidden emission lines have only been observed in extremely low-density gases and plasmas, e
+orbidden lines of nitrogen ([N II] at 654.8 and 658.4 nm), sulfur ([S II] at 671.6 and 673.1 nm), and oxygen ([O II] at 372.7 nm, and [O III] at 495.9 and 500.7 nm) are commonly observed in astrophysical plasmas. These lines are important to the energy balance of such things as planetary nebulae and H II regions. The forbidden 21-cm hydrogen line is particularly important for radio astronomy as it allows very cold neutral hydrogen gas to be seen.
+
+
+
+\section{Narrow vs. Broad}
+{\bf Broad-Line Region.} The lines arising here include hydrogen and helium recombination lines, permitted and semi-forbidden lines such as C IV and [C III (most of these in the emitted UV), and complex multiplets of Fe II. The lack of other lines suggests densities in excess of 10$7$ cm$^{-3}$, and some considerations suggest values as high as 10$^{11}$. At these densities, recombination is a very efficient radiator; a typical BLR requires only 10$^6$ solar masses.
+
+And \href{http://abyss.uoregon.edu/~js/ast123/lectures/lec12.html}{Seyfert Galaxies}. 
+The spectra of Seyfert galaxies typically contain:
+\begin{itemize} 
+  \item{Non-thermal continuum emission;}
+  \item{Narrow ($\rightarrow$ low velocity), forbidden ($\rightarrow$ low density material) lines which do not vary detectably ($\rightarrow$ large emitting region)}
+      \item{Broad ($\rightarrow$ high velocity), permitted lines which vary on fairly short timescales 
+          ($\rightarrow$ small emitting region)}
+    \item{ Also, strong emission in the radio, infrared, ultraviolet, and X-ray parts of the spectrum.}
+\end{itemize} 
+
+\section{Type 1.5, 1.8 and 1.9s}
+%% from https://en.wikipedia.org/wiki/Seyfert_galaxy#Type_1.2.2C_1.5.2C_1.8_and_1.9_Seyfert_galaxies
+%Type 1.2, 1.5, 1.8 and 1.9 Seyfert galaxies
+%NGC 1275, a type 1.5 Seyfert galaxy
+
+In 1981, Donald Osterbrok introduced the notations Seyfert 1.5, 1.8 and 1.9, where the subclasses are based on the optical appearance of the spectrum, with the numerically larger subclasses having weaker broad-line components relative to the narrow lines. For example, Type 1.9 only shows a broad component in the Hα line, and not in higher order Balmer lines. In Type 1.8, very weak broad lines can be detected in the H$\beta$ lines as well as Hα, even if they are very weak compared to the H$\alpha$. In Type 1.5, the strength of the H$\alpha$ and H$\beta$ lines are comparable.
+
+%% From Roig et al. (2014)
+\smallskip
+\smallskip
+\noindent
+Variations in the relative strength and visibility of the Balmer lines have led some investigators to define more detailed subdivisions of Seyferts. Seyfert 1.5 galaxies have moderate- strength broad H$\alpha$ and H$\beta$; Seyfert 1.8 have weak broad H$\alpha$ and H$\beta$; and Seyfert 1.9 have weak broad H$\alpha$ and only narrow H$\beta$ (see Osterbrock \& Ferland 2006; Ho 2008).
+
+
+\begin{table}
+    \caption{Ionization Energies of some (mainly UV) emisson lines}
+    \label{tab:Ionization_lines}
+    \begin{center}
+      \begin{tabular}{lcccr} 
+        \hline
+        \hline
+        Ion            & Wavelenght    & Ground  & Ionized  &  Ionization   \\
+        name         &  / Angstroms & Level      & Level     &  Energy / eV \\
+        \hline
+        \hi               & 912                          & $^{2}$S$\frac{1}{2}$       &  n/a                                            &  13.598     \\ 
+        \oi               & 1304                        & $^3$P$_2$                     & $2p^3$ $^4$S$^{\circ}_\frac{3}{2}$  &  13.618     \\
+        \mgii           & 2800                        & $^{2}$S$_{\frac{1}{2}}$        & $2p^{6}$ $^{1}$S$_{0}$                 &  15.035           \\
+        % H$\beta$    & 4861                      &                                 &                                  &            \\ 
+        \feii              & 1787                       & $^6$D$\frac{9}{2}$        &    $3d^6$ $^5$D$_4$                  &  16.199          \\
+%        \feii              & 1787, 2300-2700   & $^6$D$\frac{9}{2}$        &    $3d^6$ $^5$D$_4$                  &  16.199          \\
+        \SiII              &   1260                     & $^2$P$^{\circ}_{\frac{1}{2}}$  &  $3s^2$ $^1$S$_0$                         &  16.345         \\ 
+        \alii              & 1671?                          & $^1$S$_0$                        &  $3s$ $^2$S$_{\frac{1}{2}}$  & 	  18.829 \\
+        \aliii             & 1857                       & $^2$S$_{\frac{1}{2}}$          & $2p^6$ $^1$S$_{0}$   &    	  28.448 \\  
+        \oii               &  3727                      &  $^4$S$^{\circ}_\frac{3}{2}$  &	$2p^2$ $^3$P$_0$ & 35.121                 \\
+        % &                &                                 &                                      &            \\ 
+%        \hline
+        \ciii             & 1909                          & $^1$S$_0$                     & $2s$ $^2$S$_\frac{1}{2}$  &  47.889 \\
+        \heii            &  1640                         & $^2$S$_{\frac{1}{2}}$         &   n/a                             & 54.417\\
+        \oiii              & 5007                         &  $3$P$0$                     & $ 2p$ $2P°1/2 $          & 54.93554\\
+        \civ            & 1548                           &  $^{2}$S$_{\frac{1}{2}}$       & $1s^{2}$ $^{1}$S$_{0}$ &     64.494          \\
+        \nv             & 1240                           &  $^{2}$S$_{\frac{1}{2}}$        & $1s^2$ $^1$S$_0$ & 97.890\\
+        \hline
+        \hline
+     \end{tabular}
+  \end{center}
+\end{table}
+
+
+\section{Ionization Line}
+NIST is your friend!!!\\
+\href{http://physics.nist.gov/PhysRefData/ASD/ionEnergy.html}{http://physics.nist.gov/PhysRefData/ASD/ionEnergy.html}\\
+
+\noindent
+THIS LINK!!!:\\
+\href{https://dept.astro.lsa.umich.edu/~cowley/ionen.htm}{https://dept.astro.lsa.umich.edu/~cowley/ionen.htm}\\
+
+\noindent
+And also, \\
+\href{http://www.pa.uky.edu/$\sim$verner/atom.html}{http://www.pa.uky.edu/$\sim$verner/atom.html}\\
+
+
+     \subsection{High-Ionization Line}
+     From Wu et al. (2012)
+    ``...are clearly AGNs as evidenced by strong, high-ionization emission lines such as O vi, C iv, and/or C iii].''\\
+
+    ``High-ionization BALQSOs ( HiBALs) contain strong, broad absorption troughs shortward of high-ionization emission lines and are typically identified through the presence of \civ absorption troughs \citep{Trump06}.''
+    
+
+     \subsection{Low-Ionization Line}
+     ``LoBALs are QSOs that have BALs from ions at lower ionization states such as \aliii or \mgii''  \citep{Gibson09}
+
+     \subsection{SDSS-IV Project 0169: Outflows of Highly-Ionized Gas and Their Role in Galaxy Evolution}
+     Added by: Francisco Muller-Sanchez\\
+     Collaborators:  Julie Comerford, Becky Nevin, Jenny Greene, Nadia Zakamska \\
+
+     \noindent
+     We propose a MaNGA program to perform what will be the largest-ever
+     study of the kinematics of the optical high-ionization (or coronal)
+     lines in nearby Active Galactic Nuclei (AGN). The data give us high
+     signal-to-noise observations of several coronal lines (such as [Ne V],
+     [Fe VII] and [Fe X]) in several hundreds of nearby active galaxies
+     ($z\sim0.03$). The coronal lines are of interest for a variety of
+     reasons. First, they are unique tracers of accretion-powered nuclear
+     activity. In contrast to [O III] or Halpha, which are commonly used to
+     study the narrow-line region (NLR), the coronal lines are free of
+     contributions from star formation. Furthermore, the coronal line [Ne
+     V] 3426 is often the only forbidden line identified in high-z spectra
+     of AGN and is therefore used to identify AGN unambiguously in deep and
+     wide multiwavelength surveys. Finally, the coronal lines can be
+     employed as diagnostics of AGN-driven outflows, and are thus a useful
+     ingredient of feedback models. Our Keck/OSIRIS and VLT/SINFONI
+     integral-field work has shown that bipolar outflows are observed in
+     all coronal-line regions (CLRs), but not in all NLRs, emphasizing the
+     importance of high-ionization lines to study AGN outflows
+     (Müller-Sánchez et al. 2011). We will use the extraordinary MaNGA
+     datasets to: {\it (i)} measure the size and power of the CLR, and trends
+     with the AGN properties, {\it (ii)} determine the physical conditions
+     (temperature and density) of the coronal gas from ratios of two
+     coronal lines or a coronal line and a lower ionization line present in
+     the spectrum (e.g., [Ne V]/[O III], [Fe X]/[O II], [Fe VII] 3760/ [Fe
+     VII] 6087), {\it (iii)} analyze the velocity and dispersion maps of [Fe
+     VII], [Fe X] and [Ne V] to detect signatures of outflows in the
+     high-ionization gas, and {\it (iv)} measure the mass and energy imparted by
+     the AGN outflow into the interstellar medium. Specifically, we will
+     compare the 2D kinematic data with models comprising biconical
+     outflows superimposed on disk ro tation. Finally, we also plan to
+     compare the kinematics of the CLR with that of the NLR to determine
+     the mass outflow rate and kinetic luminosity of the outflowing gas
+     over a wide range of ionization.
+     
+     Modified: 2015-12-03 02:55 by Francisco Muller-Sanchez
+
+
+
+\section{Warm-Hot Intergalactic Medium (WHIM)}
+https://astro.uni-bonn.de/$\sim$porciani/igm/whim.pdf
+
+
+\section{Star-forming}
+``Still actively star-forming, as indicated by a significant amount of [OII]$\lambda$3727 in emission.'' 
+%% Our Cycle 22 HST proposal. \\
+
+\noindent
+e.g. Mostek et al. 2012 and 2013 (and refs there in). 
+
+
+\begin{landscape}
+\begin{table}
+  \caption{The Lines}
+  \label{tab:the_lines}
+  \begin{center}
+    \begin{tabular}{lrllll} 
+      \hline
+      \hline
+      Name & Wavelength / \AA & Transition & Rest Passband & 
+      Interpreation & Reference \\
+      \hline
+      Lyman-$\alpha$ & 1215.67 & 2 to 1        & $\sim$FUV & Major QSO line       & 1 \\
+      Lyman-$\beta$  & 1025.18 & 3 to 1        & $\sim$FUV &        & 1 \\
+      Lyman-$\gamma$ &  972.02 & 4 to 1        & $\sim$FUV &        & 1 \\
+      Lyman Limit    &  911.27 & $\infty$ to 1 & $\sim$FUV &        & 1 \\
+      \hline
+      H-$\alpha$     & 6563.   & 3 to 2        & R,r       & Recent major SF or AGN activity & 2 \\
+      H-$\beta$      & 4861.   & 4 to 2        & B,V,g     &  & 2 \\
+      H-$\gamma$     & 4341.   & 5 to 2        & U,B,u     &  & 2 \\
+      H-$\delta$     & 4102.   & 6 to 2        & $\sim$FUV & Previous SF history  & 3 \\
+      Balmer Limit   & 3646.   & $\infty$ to 2 & $\sim$FUV &  & 2 \\
+      \hline
+      HI              & 3646.   & $\infty$ to 2 & $\sim$FUV &  & 2 \\
+      HII             & 3646.   & $\infty$ to 2 & $\sim$FUV &  & 2 \\
+      \hline
+      HeI              & 3646.   & $\infty$ to 2 & $\sim$FUV &  & 2 \\
+      HeII             & 3646.   & $\infty$ to 2 & $\sim$FUV &  & 2 \\
+      HeIII            & 3646.   & $\infty$ to 2 & $\sim$FUV &  & 2 \\
+      \hline
+      CIV              & 3646.   & $\infty$ to 2 & $\sim$FUV & Major QSO line & 2 \\
+      \hline
+      OII              & 3646.   & $\infty$ to 2 & $\sim$FUV & Major QSO line & 2 \\
+      \hline
+      OIII             & 3646.   & $\infty$ to 2 & $\sim$FUV & Recent major SF line & 2 \\ 
+      OIII             & 5007.   & $\infty$ to 2 & $\sim$FUV & Recent major SF line & 2 \\
+      \hline
+      Ca II H          & 3999.   & $\infty$ to 2 & $\sim$FUV & Old stellar pop & 3 \\
+      Ca II K          & 4001.   & $\infty$ to 2 & $\sim$FUV & Old stellar pop & 3 \\
+      \hline
+      NII              & 5007.   & $\infty$ to 2 & $\sim$FUV &  & 2 \\
+      \hline
+      NeV              & 3646.   & $\infty$ to 2 & $\sim$FUV & Major QSO line & 2 \\
+      \hline
+      $[$OIII $\lambda$ 5007/ H$\beta]$ &   &  &   & ``BPT'' diagram reliable tool for determining source & 2, 4, 5 \\
+      $[$NII $\lambda$ 6583/ H$\alpha]$ & & & & of line emission from a galaxy visually differentiate & 2,4,5 \\
+                                      & & & & between Seyferts, LINERs and SF gals. However, only at & \\
+                                      & & & & ``low'' redshifts since need H$\alpha$, (not at $z\sim1$). & \\
+                                      & & & &  Modified BPT with $(U-B)$ colour replacing & \\
+                                      & & & & $[$NII $\lambda$ 6583/ H$\alpha]$ e.g. Montero-Dorta, 0801.2769. & \\
+      \hline
+      [SII $\lambda$ 6583/ H$\alpha$]   &    & $\infty$ to 2 & $\sim$FUV & Major QSO line & 2,4. 5  \\
+      \hline
+      [$\alpha$/Fe]             & 3646.   & $\infty$ to 2 & $\sim$FUV & Major QSO line & 2 \\
+      \hline
+      NV               & 1???.67 & 2 to 1        & $\sim$FUV & Major QSO line       & 1 \\
+      SiIV             & 1???.67 & 2 to 1        & $\sim$FUV & Major QSO line       & 1 \\
+      CIV              & 1???.67 & 2 to 1        & $\sim$FUV & Major QSO line       & 1 \\
+      CIII]            & 1???.67 & 2 to 1        & $\sim$FUV & Major QSO line       & 1 \\
+      MgII             & 1???.67 & 2 to 1        & $\sim$FUV & Major QSO line       & 1 \\
+      \hline
+      \hline
+% GALEX FUV: 1350-1750, % GALEX NUV: 1750-2800
+%Lyman alpha forest is the sum of absorption lines arising from the Lyman alpha transition of the neutral hydrogen in the spectra of distant galaxies and quasars.
+    \end{tabular}
+  \end{center}
+\end{table}
+\end{landscape}
+
+
+\begin{table}
+  \caption{The Lines, in increasing Wavelength (Basis for this table from 
+  SDSS SkyServer Schema Browser, SpecLineNames view {\tt http://casjobs.sdss.org/dr6/en/help/browser/browser.asp}) }
+  \label{tab:the_lines}
+  \begin{center}
+    \begin{tabular}{lll} 
+      \hline
+      \hline
+name &	value &	description \\
+      \hline
+UNKNOWN	   &    0    & 	0.00 \\
+OVI\_1033   &	1033 &	1033.82 \\
+Lya\_1215   &	1215 &	1215.67 \\
+NV\_1241    &   1241 &	1240.81 \\
+OI\_1306    &   1306 &	1305.53 \\
+CII\_1335   &	1335 &	1335.31 \\
+SiIV\_1398  &	1398 &	1397.61 \\
+SiIV\_OIV\_1400 & 1400 &  1399.80 \\
+CIV\_1549   &   1549 &	1549.48 \\
+HeII\_1640  &	1640 &	1640.40 \\
+OIII\_1666  &	1666 &	1665.85 \\
+AlIII\_1857 &	1857 &	1857.40 \\
+CIII\_1909  &	1909 &	1908.73 \\
+CII\_2326   &	2326 &	2326.00 \\
+NeIV\_2439  &	2439 &	2439.50 \\
+MgII\_2799  &	2799 &	2799.12 \\
+NeV\_3347   &	3347 &	3346.79 \\
+NeV\_3427   &	3427 &	3426.85 \\
+OII\_3727   &	3727 &  3727.09 \\
+OII\_3730   &	3730 &	3729.88 \\
+Hh\_3799    &   3799 &  3798.98 \\
+Oy\_3836    &   3836 &	3836.47 \\
+HeI\_3889   &	3889 &	3889.00 \\
+CaII K\_3935 &  3935 &	3934.78 \\
+CAII H\_3970 &  3970 &	3969.59 \\
+He\_3971    &   3971 &	3971.19 \\
+SII\_4072   &	4072 &	4072.30 \\
+Hd\_4103    &   4103 &	4102.89 \\
+G\_4306	    &   4306 &	4305.61 \\
+Hg\_4342    &   4342 &	4341.68 \\
+OIII\_4364  &	4364 &	4364.44 \\
+Hb\_4863    &   4863 &  4862.68 \\
+OIII\_4933  &	4933 &	4932.60 \\
+OIII\_4960  &	4960 &  4960.30 \\
+OIII\_5008  &	5008 &  5008.24 \\
+Mg\_5177    &   5177 &	5176.70 \\
+Na\_5896    &   5896 &	5895.60 \\
+OI\_6302    &   6302 &	6302.05 \\
+OI\_6366    &   6366 &	6365.54 \\
+NI\_6529    &   6529 &	6529.03 \\
+NII\_6550   &	6550 &	6549.86 \\
+Ha\_6565    &   6565 &	6564.61 \\
+NII\_6585   &	6585 &	6585.27 \\
+Li\_6708    &   6708 &	6707.89 \\
+SII\_6718   &	6718 &	6718.29 \\
+SII\_6733   &	6733 &	6732.67 \\
+CaII\_8500  &   8500 &	8500.36 \\
+CaII\_8544  &	8544 &	8544.44 \\
+CaII\_8665  &	8665 &	8664.52 \\
+      \hline
+      \hline
+ \end{tabular}
+   \end{center}
+\end{table}
+
+
+
+\section{Metallicity}
+e.g. http://arxiv.org/abs/1509.01279
+[N II]/H$\alpha$ and [O III]/H$\alpha$
+
+Given the capability of the current integral field instruments, the only practical method to measure metallicity in high-redshift galaxies is to use strong-line metallicity calibrators. The direct measurement of metallicity ($T_e$ method) is not feasible for individual galaxies at this redshift since it relies on the measurement of emission lines that are too faint to detect. In this work, we use the [N II] $\lambda6584$/H$\alpha$ ratio (N2) and the  ([O III] $\lambda$5008/H$\beta$)/([N II] $\lambda$6584/H$\alpha$) ratio (O3N2) with the calibrations from \citet{pp04} - PP04, \citet{Steidel14} - S14, and \citet{Maiolino08} - M08:
+\begin{equation}
+12+\log\textrm{(O/H)} = 8.90+0.57\times \textrm{N2} \tag{N2, PP04}
+\end{equation}
+\begin{equation}
+12+\log\textrm{(O/H)} = 8.62+0.36\times \textrm{N2} \tag{N2, S14}
+\end{equation}
+\begin{equation}
+12+\log\textrm{(O/H)} = 8.73-0.32\times \textrm{O3N2} \tag{O3N2, PP04}
+\end{equation}
+\begin{equation}
+12+\log\textrm{(O/H)} = 8.66-0.28\times \textrm{O3N2} \tag{O3N2, S14}
+\end{equation}
+where N2$\equiv \log(\textrm{[N II]} \lambda6584/\textrm{H}\alpha)$ and O3N2$ \equiv \log\textrm{(([O III] }\lambda5008/\textrm{H}\beta)/\textrm{([N II]}\lambda6584\textrm{/H}\alpha))$. 
+
+
+\noindent
+E$+$A (e$+$a) galaxies have... (Roseboom et al. 2006 and refs therein).\\
+k$+$a         galaxies have... (Roseboom et al. 2006 and refs therein).\\
+
+
+
+\section{References}
+
+
+      Name                            & Year & Journal & Volume & Page & Section(s) \\
+      \hline
+      Croom et al.                    & 2004 & MNRAS      & 375        & 600  & ???? \\
+      Kriek et al.                    & 2007 & astro-ph   & 0611724    & v4   & 3 \\
+      Roseboom et al.                 & 2006 & MNRAS      &            &      &   \\
+      Baldwin, Phillips \& Terlevich  & 1981& MNRAS      &            &      &   \\
+      Yan et al.                      & 2006&            &            &      & \\
+      %also K. Brand talk,. Galaxy and BH evolution: Towards a unified view conf
+      \hline
+      \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+
+\bibliographystyle{mn2e}
+\bibliography{/cos_pc19a_npr/LaTeX/tester_mnras}
+
+\end{document}
+
