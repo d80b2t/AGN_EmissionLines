@@ -1,11 +1,17 @@
 \documentclass[11pt]{article}
-\setlength {\textwidth}{180mm} 
-\setlength {\textheight}{260mm}
-\topmargin=-35.00mm
+\setlength {\textwidth}{176mm} 
+\setlength {\textheight}{250mm}
+\topmargin=-25.00mm
 \oddsidemargin=-10.00mm
 \pagestyle{empty}
 
 \input{format}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{lscape}
+\usepackage{rotating}
+\usepackage{epstopdf}
+
 
 \begin{document}
 
@@ -68,24 +74,24 @@ Variations in the relative strength and visibility of the Balmer lines have led 
         Ion            & Wavelength    & Ground  & Ionized  &  Ionization   \\
         name         &  / Angstroms & Level      & Level     &  Energy / eV \\
         \hline
-        \hi               & 912                          & $^{2}$S$\frac{1}{2}$       &  n/a                                            &  13.598     \\ 
-        \oi               & 1304                        & $^3$P$_2$                     & $2p^3$ $^4$S$^{\circ}_\frac{3}{2}$  &  13.618     \\
-        \mgii           & 2800                        & $^{2}$S$_{\frac{1}{2}}$        & $2p^{6}$ $^{1}$S$_{0}$                 &  15.035           \\
-        % H$\beta$    & 4861                      &                                 &                                  &            \\ 
-        \feii              & 1787                       & $^6$D$\frac{9}{2}$        &    $3d^6$ $^5$D$_4$                  &  16.199          \\
-%        \feii              & 1787, 2300-2700   & $^6$D$\frac{9}{2}$        &    $3d^6$ $^5$D$_4$                  &  16.199          \\
-        \SiII              &   1260                     & $^2$P$^{\circ}_{\frac{1}{2}}$  &  $3s^2$ $^1$S$_0$                         &  16.345         \\ 
-        \alii              & 1671?                          & $^1$S$_0$                        &  $3s$ $^2$S$_{\frac{1}{2}}$  & 	  18.829 \\
-        \aliii             & 1857                       & $^2$S$_{\frac{1}{2}}$          & $2p^6$ $^1$S$_{0}$   &    	  28.448 \\  
-        \oii               &  3727                      &  $^4$S$^{\circ}_\frac{3}{2}$  &	$2p^2$ $^3$P$_0$ & 35.121                 \\
+        \hi               & 912                          & $^{2}$S$\frac{1}{2}$         &  n/a                                              &  13.598     \\ 
+        \oi               & 1304                        & $^3$P$_2$                       & $2p^3$ $^4$S$^{\circ}_\frac{3}{2}$  &  13.618     \\
+        \mgii           & 2800                        & $^{2}$S$_{\frac{1}{2}}$         & $2p^{6}$ $^{1}$S$_{0}$                   &  15.035           \\
+        % H$\beta$    & 4861                      &                                        &                                                      &            \\ 
+        \feii              & 1787                       & $^6$D$\frac{9}{2}$         &    $3d^6$ $^5$D$_4$                    &  16.199          \\
+%        \feii              & 1787, 2300-2700   & $^6$D$\frac{9}{2}$       &    $3d^6$ $^5$D$_4$                  &  16.199          \\
+        \SiII              &   1260                     & $^2$P$^{\circ}_{\frac{1}{2}}$  &  $3s^2$ $^1$S$_0$                      &  16.345         \\ 
+        \alii              & 1671?                          & $^1$S$_0$                   &  $3s$ $^2$S$_{\frac{1}{2}}$             &   18.829 \\
+        \aliii             & 1857                       & $^2$S$_{\frac{1}{2}}$           & $2p^6$ $^1$S$_{0}$                     &   28.448 \\  
+        \oii               &  3727                      &  $^4$S$^{\circ}_\frac{3}{2}$  &	$2p^2$ $^3$P$_0$                    & 35.121                 \\
         % &                &                                 &                                      &            \\ 
 %        \hline
-        \ciii              & 1909                      & $^1$S$_0$                     & $2s$ $^2$S$_\frac{1}{2}$  &  47.889 \\
-        $^{a,b}$\heii    & 1640                      & $^2$S$_{\frac{1}{2}}$         &   n/a                             & 54.417\\
-        $^{a,b}$\heii    & 4686                      &                                     &                                     &   54.417        \\       
-        \oiii              & 5007                         &  $3$P$0$                     & $ 2p$ $2P°1/2 $          & 54.93554\\
-        \civ            & 1548                           &  $^{2}$S$_{\frac{1}{2}}$       & $1s^{2}$ $^{1}$S$_{0}$ &     64.494          \\
-        \nv             & 1240                           &  $^{2}$S $_{\frac{1}{2}}$        & $1s^2$ $^1$S$_0$ & 97.890\\
+        \ciii              & 1909                      & $^1$S$_0$                     & $2s$ $^2$S$_\frac{1}{2}$                &  47.889 \\
+        $^{a,b}$\heii    & 1640                      & $^2$S$_{\frac{1}{2}}$         &   n/a                                            &  54.417\\
+        $^{a,b}$\heii    & 4686                      &                                     &                                                      &  54.417        \\       
+        \oiii              & 5007                         &  $3$P$0$                     & $ 2p$ $2P°1/2 $                          &  54.93554   \\
+        \civ            & 1548                           &  $^{2}$S$_{\frac{1}{2}}$       & $1s^{2}$ $^{1}$S$_{0}$                 &  64.494           \\
+        \nv             & 1240                           &  $^{2}$S $_{\frac{1}{2}}$        & $1s^2$ $^1$S$_0$                   &  97.890\\
         \hline
                          &                       &             &                &                     \\
                          &                       &             &                &                     \\
@@ -116,28 +122,28 @@ Variations in the relative strength and visibility of the Balmer lines have led 
     \begin{tabular}{lcccr} 
       \hline
       \hline
-      Ion            & Wavelength    & Ground  & Ionized  &  Ionization   \\
-      name         &  / Angstroms & Level      & Level     &  Energy / eV \\
+      Ion            & Wavelength                & Ground                           & Ionized                                 &  Ionization   \\
+      name         &  / Angstroms             & Level                              & Level                                     &  Energy / eV \\
       \hline
-      \hi               & 912                          & $^{2}$S$\frac{1}{2}$       &  n/a                            &  13.598     \\ 
-      \lyb            &  1025.72                  &  $1s$ $^2$S                   &  $n=3$                               & 12.0875\\
-      \lya             & 1215.67                   & $1s$ $^2$S                    &  $n=2$                & 10.198     \\
-      \nv             & 1240                           &  $^{2}$S$_{\frac{1}{2}}$        & $1s^2$ $^1$S$_0$ & 97.890\\
-      \SiII              &   1260                     & $^2$P$^{\circ}_{\frac{1}{2}}$  &  $3s^2$ $^1$S$_0$                         &  16.345         \\ 
+      \hi               & 912                          & $^{2}$S$\frac{1}{2}$       &  n/a                                              & 13.598     \\ 
+      \lyb             &  1025.72                  &  $1s$ $^2$S                   &  $n=3$                                         & 12.0875\\
+      \lya             & 1215.67                   & $1s$ $^2$S                    &  $n=2$                                         & 10.198     \\
+      \nv              & 1240                        &  $^{2}$S$_{\frac{1}{2}}$        & $1s^2$ $^1$S$_0$                      &  97.890\\
+      \SiII              &   1260                     & $^2$P$^{\circ}_{\frac{1}{2}}$  &  $3s^2$ $^1$S$_0$                     &  16.345         \\ 
       \oi               & 1304                        & $^3$P$_2$                     & $2p^3$ $^4$S$^{\circ}_\frac{3}{2}$  &  13.618     \\
-      \civ            & 1548                           &  $^{2}$S$_{\frac{1}{2}}$       & $1s^{2}$ $^{1}$S$_{0}$ &     64.494          \\
-      \heii            &  1640                         & $^2$S$_{\frac{1}{2}}$         &   n/a                             & 54.417\\
-      \alii              & 1671?                          & $^1$S$_0$                        &  $3s$ $^2$S$_{\frac{1}{2}}$  & 	  18.829 \\
-      \feii              & 1787                       & $^6$D$\frac{9}{2}$        &    $3d^6$ $^5$D$_4$                  &  16.199          \\
-      % \feii              & 1787, 2300-2700   & $^6$D$\frac{9}{2}$        &    $3d^6$ $^5$D$_4$                  &  16.199          \\
-      \aliii             & 1857                       & $^2$S$_{\frac{1}{2}}$          & $2p^6$ $^1$S$_{0}$   &    	  28.448 \\  
-      \ciii             & 1909                          & $^1$S$_0$                     & $2s$ $^2$S$_\frac{1}{2}$  &  47.889 \\
-      \mgii           & 2800                        & $^{2}$S$_{\frac{1}{2}}$        & $2p^{6}$ $^{1}$S$_{0}$                 &  15.035           \\
+      \civ             & 1548                           &  $^{2}$S$_{\frac{1}{2}}$       & $1s^{2}$ $^{1}$S$_{0}$                &  64.494          \\
+      \heii             &  1640                         & $^2$S$_{\frac{1}{2}}$         &   n/a                                          &  54.417\\
+      \alii              & 1671?                          & $^1$S$_0$                        &  $3s$ $^2$S$_{\frac{1}{2}}$       &  18.829 \\
+      \feii              & 1787                       & $^6$D$\frac{9}{2}$        &    $3d^6$ $^5$D$_4$                   &  16.199          \\
+      % \feii              & 1787, 2300-2700   & $^6$D$\frac{9}{2}$        &    $3d^6$ $^5$D$_4$               &  16.199          \\
+      \aliii             & 1857                       & $^2$S$_{\frac{1}{2}}$          & $2p^6$ $^1$S$_{0}$                     &  28.448 \\  
+      \ciii              & 1909                          & $^1$S$_0$                     & $2s$ $^2$S$_\frac{1}{2}$            &  47.889 \\
+      \mgii            & 2800                        & $^{2}$S$_{\frac{1}{2}}$        & $2p^{6}$ $^{1}$S$_{0}$                 &  15.035           \\
       % H$\beta$    & 4861                      &                                 &                                  &            \\ 
-      \oii               &  3727                      &  $^4$S$^{\circ}_\frac{3}{2}$  &	$2p^2$ $^3$P$_0$ & 35.121                 \\
+      \oii               &  3727                      &  $^4$S$^{\circ}_\frac{3}{2}$  &	$2p^2$ $^3$P$_0$                 & 35.121                 \\
       % &                &                                 &                                      &            \\ 
       % \hline
-      \oiii              & 5007                         &  $3$P$0$                     & $ 2p$ $2P°1/2 $          & 54.93554\\
+      \oiii              & 5007                         &  $3$P$0$                     & $ 2p$ $2P°1/2 $                          & 54.93554\\
       \hline
         \hline
      \end{tabular}
@@ -261,6 +267,14 @@ And also, \\
 \end{landscape}
 
 
+\section{IR fine-structure lines}
+e.g. arXiv:1903.00946v1, Section 3:: \\
+1 coronal region line: [SiVII] 6.50 μm;
+8 AGN fine-structure emission lines: [NeVI]7.65,
+[ArV]7.90, [CaV]11.48, [ArV]13.09, [MgV]13.50,
+[NeV] 14.32, [NeV] 24.31 and [OIV] 25.89 μm;
+
+
 \newpage
 \section{CLAGN and CLQ Mini-lit review} 
 This is just a quick section for a mini CLAGN and CLQ literature review. 
@@ -353,6 +367,69 @@ CaII\_8665  &	8665 &	8664.52 \\
 \end{table}
 
 
+\clearpage
+%% http://www.physics.ohio-state.edu/~lvw/handyinfo/ips.jpg
+
+\begin{sidewaysfigure}[ht]
+    \includegraphics[height=18.5cm,width=26.0cm]{ips.jpg}
+    \caption{Property profile of the diverse library compared to the compound pool.}
+    \label{fig:PropProf}
+\end{sidewaysfigure}
+
+
+\clearpage
+
+\section{HST/COS lines}
+From Miller et al. arXiv:809.03114v1 \\
+Distance, Energy, and Variability of Quasar Outflows: Two HST/COS epochs of LBQS 1206+1052
+H i, \\
+C iii, \\
+N iii, \\
+N v, \\
+O vi, \\
+Si ii, \\
+Si iii,  \\
+P v, \\
+S iii, \\ 
+S iv, \\ 
+S vi \\
+
+\noindent
+e.g. Their figure 1 shows::
+S VI 945\\
+Ly $\delta$ 950 \\
+Ly $\gamma$ 973 \\
+C III 977 \\
+N III 990 \\
+N III* 992 \\
+N III 991 \\
+%%
+S III 1012 \\
+S III* 1016 \\
+%%
+Ly $\beta$ 1026\\
+O VI 1032\\
+O VI 1037 \\
+%%
+S IV 1063 \\
+S IV* 1073 \\
+%%
+PV 1118 \\
+PV 1128 \\
+%%
+Si III 1207 \\
+%%
+Ly $\alpha$ \\
+%%
+N V 1239\\
+N V 1243\\
+N V 1240\\
+%%
+Si II 1260 \\
+Si II* 1265\\
+
+
+
 \section{Notes, Links and To Dos...}
 
 
@@ -362,6 +439,7 @@ Tytler, D., O’Meara, J. M., Suzuki, N., Kirkman, D., Lubin, D., \& Orin, A.. 2
 
 see also:: \\ 
 https://arxiv.org/abs/1703.04250v1
+
 
 \bibliographystyle{mn2e}
 \bibliography{/cos_pc19a_npr/LaTeX/tester_mnras}
